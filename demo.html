@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="http://mat1.gtimg.com/news/feixliu/slideScreen.css">
+	<style>
+		
+		.item1 {
+			background-color: red;
+		}
+		.item2 {
+			background-color: orange;
+		}
+		.item3 {
+			background-color: blue;
+		}
+		.item4 {
+			background-color: black;
+		}
+		.item5 {
+			background-color: red;
+		}
+		.item6 {
+			background-color: pink;
+		}
+		h1 {
+			font-size: 10rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="slide_outer">
+		<div class="sc_item item1">
+			<h1 style="color: white" class="need_show demo1">这里是第1屏</h1>
+			<h1 style="color: white" class="need_show demo11">这是第二句话</h1>
+		</div>
+		<div class="sc_item item2">
+			<h1 style="color: white" class="need_show demo2">这里是第2屏</h1>
+		</div>
+		<div class="sc_item item3">
+			<h1 style="color: white" class="need_show demo3">这里是第3屏</h1>
+		</div>
+		<div class="sc_item item4">
+			<h1 style="color: white" class="need_show demo4">这里是第4屏</h1>
+		</div>
+		<div class="sc_item item5">
+			<h1 style="color: white" class="need_show demo5">这里是第5屏</h1>
+		</div>
+		<div class="sc_item item6">
+			<h1 style="color: white" class="need_show demo6">这里是第6屏</h1>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://mat1.gtimg.com/news/feixliu/zepto.min.js" charset="UTF-8"></script>
+	<!-- <script src="http://mat1.gtimg.com/news/feixliu/slideScreen.js"></script> -->
+	<script src="./slideScreen.js"></script>
+	<script>
+		
+		sc_move({
+			'target': $('.demo1'),
+			'initCSS': {'opacity': 0},
+			'targetCSS': {'opacity': 1},
+			'duration': 500,
+			'delay': 500,
+		})
+		sc_move({
+			'target': $('.demo11'),
+			'initCSS': {'opacity': 0},
+			'targetCSS': {'opacity': 1},
+			'duration': 500,
+			'delay': 1000,
+		})
+		sc_move({
+			'target': $('.demo2'),
+			'initCSS': {'opacity': 0},
+			'targetCSS': {'opacity': 1},
+			'duration': 500,
+			'delay': 500,
+		})
+		sc_move({
+			'target': $('.demo3'),
+			'initCSS': {'opacity': 0},
+			'targetCSS': {'opacity': 1},
+			'duration': 500,
+			'delay': 500,
+		})
+		sc_move({
+			'target': $('.demo4'),
+			'initCSS': {'opacity': 0,},
+			'targetCSS': {'opacity': 1},
+			'duration': 500,
+			'delay': 500,
+		})
+		sc_move({
+			'target': $('.demo5'),
+			'initCSS': {'opacity': 0,},
+			'targetCSS': {'opacity': 1},
+			'duration': 500,
+			'delay': 500,
+		})
+		sc_move({
+			'target': $('.demo6'),
+			'initCSS': {'opacity': 0,},
+			'targetCSS': {'opacity': 1},
+			'duration': 500,
+			'delay': 500,
+		});
+		</script>
+		
+	</script>
+</body>
+</html>
